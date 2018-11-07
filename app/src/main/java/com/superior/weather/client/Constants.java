@@ -1,4 +1,4 @@
-package org.pixelexperience.weather.client;
+package com.superior.weather.client;
 
 class Constants {
     static final Boolean DEBUG = false;

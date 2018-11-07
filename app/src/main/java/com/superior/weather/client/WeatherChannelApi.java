@@ -1,4 +1,4 @@
-package org.pixelexperience.weather.client;
+package com.superior.weather.client;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -38,9 +38,9 @@ import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.Response;
 
-import static org.pixelexperience.weather.client.Constants.DEBUG;
-import static org.pixelexperience.weather.client.WeatherInfo.WEATHER_UPDATE_ERROR;
-import static org.pixelexperience.weather.client.WeatherInfo.WEATHER_UPDATE_SUCCESS;
+import static com.superior.weather.client.Constants.DEBUG;
+import static com.superior.weather.client.WeatherInfo.WEATHER_UPDATE_ERROR;
+import static com.superior.weather.client.WeatherInfo.WEATHER_UPDATE_SUCCESS;
 
 public class WeatherChannelApi implements OnFailureListener, OnCanceledListener {
     private String TAG = "WeatherChannelApi";

@@ -1,4 +1,4 @@
-package org.pixelexperience.weather.client;
+package com.superior.weather.client;
 
 import android.content.Context;
 import android.content.pm.PackageManager;
@@ -30,28 +30,22 @@ public class Utils {
 
     public static Boolean isBuildValid(Context context) {
         PackageManager pm = context.getPackageManager();
-        if (pm != null && !pm.hasSystemFeature("org.pixelexperience.weather.client.SUPPORTED")) {
+        if (pm != null && !pm.hasSystemFeature("com.superior.weather.client.SUPPORTED")) {
             return false;
         }
-        if (getSystemProperty("org.pixelexperience.version", "").isEmpty()) {
+        if (getSystemProperty("ro.superior.version", "").isEmpty()) {
             return false;
         }
-        if (getSystemProperty("org.pixelexperience.build_date", "").isEmpty()) {
+        if (getSystemProperty("ro.superior.releasetype", "").isEmpty()) {
             return false;
         }
-        if (getSystemProperty("org.pixelexperience.build_type", "").isEmpty()) {
-            return false;
-        }
-        if (getSystemProperty("org.pixelexperience.fingerprint", "").isEmpty()) {
-            return false;
-        }
-        if (getSystemProperty("org.pixelexperience.device", "").isEmpty()) {
+        if (getSystemProperty("ro.superior.device", "").isEmpty()) {
             return false;
         }
         return true;
     }
 
     public static String getSystemRevision() {
-        return getSystemProperty("org.pixelexperience.weather.revision", "1");
+        return getSystemProperty("ro.superior.weather.revision", "1");
     }
 }

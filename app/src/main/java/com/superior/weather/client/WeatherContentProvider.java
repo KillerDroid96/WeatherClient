@@ -1,4 +1,4 @@
-package org.pixelexperience.weather.client;
+package com.superior.weather.client;
 
 import android.content.ContentProvider;
 import android.content.ContentValues;
@@ -8,7 +8,7 @@ import android.net.Uri;
 import android.support.annotation.NonNull;
 import android.util.Log;
 
-import static org.pixelexperience.weather.client.Constants.DEBUG;
+import static com.superior.weather.client.Constants.DEBUG;
 
 public class WeatherContentProvider extends ContentProvider {
     private static final String TAG = "WeatherClient:WeatherContentProvider";

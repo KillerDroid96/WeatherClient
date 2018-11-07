@@ -1,4 +1,4 @@
-package org.pixelexperience.weather.client;
+package com.superior.weather.client;
 
 import android.content.Context;
 import android.os.StrictMode;
@@ -22,7 +22,7 @@ import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.Response;
 
-import static org.pixelexperience.weather.client.Constants.DEBUG;
+import static com.superior.weather.client.Constants.DEBUG;
 
 class SunriseSunsetRestApi {
 
