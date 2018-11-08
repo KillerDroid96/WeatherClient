@@ -1,4 +1,4 @@
-package com.superior.weather.client;
+package com.crdroid.weather.client;
 
 import android.content.Context;
 import android.os.StrictMode;
@@ -22,7 +22,7 @@ import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.Response;
 
-import static com.superior.weather.client.Constants.DEBUG;
+import static com.crdroid.weather.client.Constants.DEBUG;
 
 class SunriseSunsetRestApi {
 

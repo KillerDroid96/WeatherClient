@@ -1,4 +1,4 @@
-package com.superior.weather.client;
+package com.crdroid.weather.client;
 
 import android.content.Context;
 import android.content.pm.PackageManager;
@@ -30,22 +30,22 @@ public class Utils {
 
     public static Boolean isBuildValid(Context context) {
         PackageManager pm = context.getPackageManager();
-        if (pm != null && !pm.hasSystemFeature("com.superior.weather.client.SUPPORTED")) {
+        if (pm != null && !pm.hasSystemFeature("com.crdroid.weather.client.SUPPORTED")) {
             return false;
         }
-        if (getSystemProperty("ro.superior.version", "").isEmpty()) {
+        if (getSystemProperty("ro.crdroid.version", "").isEmpty()) {
             return false;
         }
-        if (getSystemProperty("ro.superior.releasetype", "").isEmpty()) {
+        if (getSystemProperty("ro.crdroid.releasetype", "").isEmpty()) {
             return false;
         }
-        if (getSystemProperty("ro.superior.device", "").isEmpty()) {
+        if (getSystemProperty("ro.crdroid.device", "").isEmpty()) {
             return false;
         }
         return true;
     }
 
     public static String getSystemRevision() {
-        return getSystemProperty("ro.superior.weather.revision", "1");
+        return getSystemProperty("ro.crdroid.weather.revision", "1");
     }
 }

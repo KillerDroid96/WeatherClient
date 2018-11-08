@@ -1,4 +1,4 @@
-package com.superior.weather.client;
+package com.crdroid.weather.client;
 
 import android.content.ContentProvider;
 import android.content.ContentValues;
@@ -8,7 +8,7 @@ import android.net.Uri;
 import android.support.annotation.NonNull;
 import android.util.Log;
 
-import static com.superior.weather.client.Constants.DEBUG;
+import static com.crdroid.weather.client.Constants.DEBUG;
 
 public class WeatherContentProvider extends ContentProvider {
     private static final String TAG = "WeatherClient:WeatherContentProvider";

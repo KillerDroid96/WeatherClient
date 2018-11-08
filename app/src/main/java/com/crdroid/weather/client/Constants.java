@@ -1,4 +1,4 @@
-package com.superior.weather.client;
+package com.crdroid.weather.client;
 
 class Constants {
     static final Boolean DEBUG = false;

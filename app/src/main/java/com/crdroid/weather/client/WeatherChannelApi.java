@@ -1,4 +1,4 @@
-package com.superior.weather.client;
+package com.crdroid.weather.client;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -38,9 +38,9 @@ import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.Response;
 
-import static com.superior.weather.client.Constants.DEBUG;
-import static com.superior.weather.client.WeatherInfo.WEATHER_UPDATE_ERROR;
-import static com.superior.weather.client.WeatherInfo.WEATHER_UPDATE_SUCCESS;
+import static com.crdroid.weather.client.Constants.DEBUG;
+import static com.crdroid.weather.client.WeatherInfo.WEATHER_UPDATE_ERROR;
+import static com.crdroid.weather.client.WeatherInfo.WEATHER_UPDATE_SUCCESS;
 
 public class WeatherChannelApi implements OnFailureListener, OnCanceledListener {
     private String TAG = "WeatherChannelApi";
